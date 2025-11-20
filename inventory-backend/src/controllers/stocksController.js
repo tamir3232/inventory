@@ -1,8 +1,7 @@
-const { Stocks } = require('../database/models')
 const StocksService = require("../services/StocksService");
 
 
-const getProduct = async(req,res,next) =>{
+const getStock= async(req,res,next) =>{
     try {
         const stocks = await StocksService.getAll();
         return res.status(200).json({
@@ -17,7 +16,7 @@ const getProduct = async(req,res,next) =>{
 
 
 
-module.exports = {getProduct}
+module.exports = {getStock}
 
 
 

@@ -17,6 +17,24 @@ class StocksRepository {
     return Stock.update(data, { where: { id } });
   }
 
+  async updateStockByProductAndWarehouse(warehouseId, productId, data,t=null) {    
+   return Stock.update(data, { 
+      where: { 
+        warehouse_id: warehouseId, 
+        product_id: productId 
+      } 
+    }, { transaction: t });
+  }
+
+  async findByProductAndWarehouse(warehouseId, productId) {    
+   return Stock.findOne({
+      where: {
+        warehouse_id: warehouseId, 
+        product_id: productId 
+      }
+    });
+  }
+
   async delete(id) {
     return Stock.destroy({ where: { id } });
   }

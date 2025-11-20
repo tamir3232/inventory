@@ -9,6 +9,8 @@ module.exports = (sequelize, DataTypes) => {
       });
       PurchaseRequest.hasMany(models.PurchaseRequestItem, {
         foreignKey: "purchase_request_id",
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       });
     }
   }

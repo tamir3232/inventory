@@ -16,6 +16,8 @@ module.exports = {
           model: "purchase_requests",
           key: "id",
         },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE', 
       },
       product_id: {
         type: Sequelize.INTEGER,

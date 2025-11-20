@@ -3,6 +3,6 @@ const express = require("express");
 const router = express.Router();
 const controller = require("../controllers/webhookController");
 
-router.get("/", controller.index);
+router.post("/receive-stock", controller.postWebhook);
 
 module.exports = router;

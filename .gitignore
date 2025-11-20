@@ -1,0 +1,3 @@
+
+inventory-backend/node_modules/*
+inventory-backend/.env

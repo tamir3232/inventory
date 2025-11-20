@@ -19,8 +19,10 @@ module.exports = (sequelize, DataTypes) => {
       quantity: DataTypes.INTEGER,
     },
     {
-      sequelize,
-      modelName: "PurchaseRequestItem",
+       sequelize,
+      timestamps: true,
+      underscored: false,
+      tableName: 'purchase_request_items'
     }
   );
   return PurchaseRequestItem;
