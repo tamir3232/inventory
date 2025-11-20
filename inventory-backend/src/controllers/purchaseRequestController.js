@@ -1,4 +1,48 @@
+const purchaseRequestService = require("../services/PurchaseRequestService");
 
-exports.index = async (req, res) => {
-  res.json({ message: "GET /purchase-request" });
+
+const createPlaningPurchaseRequest = async (req, res, next) => {
+  try {
+    const data = req.body;
+    const purchaseRequest = await purchaseRequestService.createPlaningPurchaseRequest(data);
+    return res.status(201).json({
+      message: "Purchase Request Created Successfully",
+      data: purchaseRequest,
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+const UpdatePlaningPurchaseRequest = async (req, res, next) => {
+  try {
+    const data = req.body;
+    const param = req.params;
+    const purchaseRequest = await purchaseRequestService.updatePlaningPurchaseRequest(data,param);
+    return res.status(201).json({
+      message: "Purchase Request Created Successfully",
+      data: purchaseRequest,
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+const DeletePlaningPurchaseRequest = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    await purchaseRequestService.deletePlaningPurchaseRequest(id);
+    return res.status(200).json({
+      message: "Purchase Request Deleted Successfully",
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+
+module.exports = {
+  createPlaningPurchaseRequest,
+  UpdatePlaningPurchaseRequest,
+  DeletePlaningPurchaseRequest
 };

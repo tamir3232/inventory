@@ -47,3 +47,878 @@
   label: 'backend-service',
   timestamp: '2025-11-20T10:38:08.970Z'
 }
+{
+  message: 'GET /api/v1/purchase/request',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:31:03.799Z'
+}
+{
+  message: 'GET /api/v1/purchase/request',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:31:47.636Z'
+}
+{
+  message: 'GET /api/v1/purchase/request',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:31:48.791Z'
+}
+{
+  message: 'GET /api/v1/purchase/request',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:31:49.712Z'
+}
+{
+  message: 'GET /api/v1/purchase/request',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:31:53.630Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'warehouseId')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:32:07.278Z'
+}
+{
+  message: '"reference" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:43:29.131Z'
+}
+{
+  message: '"status" is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:44:44.965Z'
+}
+{
+  message: '"status" is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:44:45.749Z'
+}
+{
+  message: "Expected ',' or '}' after property value in JSON at position 76 (line 5 column 3)",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:44:53.757Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:47:15.289Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:47:36.901Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:47:49.163Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:48:07.533Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:48:57.890Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:49:06.135Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:49:31.729Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:49:58.909Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:51:40.613Z'
+}
+{
+  message: 'warehouse is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:52:12.786Z'
+}
+{
+  message: 'warehouse is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:52:34.243Z'
+}
+{
+  message: 'Warehouse.findById is not a function',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:54:12.680Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:55:04.899Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'findByPk')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:55:48.021Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'findByPk')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:55:51.633Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:56:28.708Z'
+}
+{
+  message: 'The argument passed to findAll must be an options object, use findByPk if you wish to pass a single primary key value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:56:35.305Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:56:44.260Z'
+}
+{
+  message: 'warehouse.findAll is not a function',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:57:24.339Z'
+}
+{
+  message: 'warehouse.findAll is not a function',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:57:25.895Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:57:55.457Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:58:00.924Z'
+}
+{
+  message: 'relation "warehouse" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:58:08.760Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'findByPk')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:59:07.982Z'
+}
+{
+  message: 'warehouse is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:59:21.395Z'
+}
+{
+  message: 'warehouse is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:59:49.888Z'
+}
+{
+  message: 'warehouse is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T13:59:51.329Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'findByPk')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:00:27.475Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'findByPk')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:00:28.412Z'
+}
+{
+  message: 'Warehouse with ID 101 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:02:16.703Z'
+}
+{
+  message: 'invalid input value for enum enum_purchase_requests_status: "pending"',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:03:39.218Z'
+}
+{
+  message: '"status" must be one of [pending, ordered, received]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:04:02.650Z'
+}
+{
+  message: 'Assignment to constant variable.',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:04:46.433Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:05:09.681Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:05:21.590Z'
+}
+{
+  message: 'Assignment to constant variable.',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:05:42.465Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:08:28.300Z'
+}
+{
+  message: 'relation "PurchaseRequestItems" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:08:36.480Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:09:35.354Z'
+}
+{
+  message: 'relation "purchase_requests_items" does not exist',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:09:38.751Z'
+}
+{
+  message: 'null value in column "purchase_request_id" of relation "purchase_request_items" violates not-null constraint',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:09:59.770Z'
+}
+{
+  message: 'null value in column "purchase_request_id" of relation "purchase_request_items" violates not-null constraint',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:10:56.829Z'
+}
+{
+  message: 'null value in column "product_id" of relation "purchase_request_items" violates not-null constraint',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:12:00.826Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:12:14.954Z'
+}
+{
+  message: 'purchaseRequest is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:12:22.801Z'
+}
+{
+  message: 'purchaseRequest is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:12:36.686Z'
+}
+{
+  message: 'purchaseRequest is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:13:56.441Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:14:32.870Z'
+}
+{
+  message: 'sequelize is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:20:53.595Z'
+}
+{
+  message: 'sequelize is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:20:55.394Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:07.226Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:10.399Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:18.302Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:20.827Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:21.466Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:22.024Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:25.717Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:41.228Z'
+}
+{
+  message: 'Deliberate Error for Testing Rollback',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:21:44.454Z'
+}
+{
+  message: 'Deliberate Error for Testing Rollback',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:22:03.249Z'
+}
+{
+  message: 'data is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:23:57.189Z'
+}
+{
+  message: 'data is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:24:00.935Z'
+}
+{
+  message: 'data is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:24:26.202Z'
+}
+{
+  message: 'data is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:24:28.535Z'
+}
+{
+  message: 'Deliberate Error for Testing Rollback',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:24:41.337Z'
+}
+{
+  message: 'Deliberate Error for Testing Rollback',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:24:43.500Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:25:31.302Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:25:49.880Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:31:06.207Z'
+}
+{
+  message: `Unexpected token ']', ..."\n    },\n  ]\n}" is not valid JSON`,
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:31:11.850Z'
+}
+{
+  message: 'Validation error',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:31:14.361Z'
+}
+{
+  message: 'Reference aaas already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:33:04.076Z'
+}
+{
+  message: 'Reference aaas already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:35:28.497Z'
+}
+{
+  message: 'Reference aaas already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T14:35:29.333Z'
+}
+{
+  message: 'PUT /api/v1/purchase/request',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:14:31.706Z'
+}
+{
+  message: 'PUT /api/v1/purchase/request:1',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:14:55.037Z'
+}
+{
+  message: 'Purchase Request Item with ID 13 does not belong to Purchase Request ID 1',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:15:00.338Z'
+}
+{
+  message: 'Purchase Request Item with ID 13 does not belong to Purchase Request ID 13',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:15:13.109Z'
+}
+{
+  message: 'FOOM_85e8f11fe57df80598c80e509b52af6b is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:29:48.368Z'
+}
+{
+  message: 'External Hub Failed with status 400: {"API_ID":null,"status":400,"data":{"error":"webhook_response object is required in the body"}}',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:30:02.412Z'
+}
+{
+  message: 'External Hub Failed with status 400: {"API_ID":null,"status":400,"data":{"error":"webhook_response object is required in the body"}}',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:32:20.760Z'
+}
+{
+  message: 'purchaseData is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:33:44.226Z'
+}
+{
+  message: 'purchaseData is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:33:47.526Z'
+}
+{
+  message: "Expected ',' or '}' after property value in JSON at position 195 (line 14 column 7)",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:57:01.308Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be deleted',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:57:46.477Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be deleted',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:58:18.643Z'
+}
+{
+  message: 'update or delete on table "purchase_requests" violates foreign key constraint "purchase_request_items_purchase_request_id_fkey" on table "purchase_request_items"',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:58:29.126Z'
+}
+{
+  message: 'update or delete on table "purchase_requests" violates foreign key constraint "purchase_request_items_purchase_request_id_fkey" on table "purchase_request_items"',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T15:59:59.608Z'
+}
+{
+  message: 'update or delete on table "purchase_requests" violates foreign key constraint "purchase_request_items_purchase_request_id_fkey" on table "purchase_request_items"',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:00:02.621Z'
+}
+{
+  message: 'POST /api/v1/webhook/receive-stock',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:31:16.287Z'
+}
+{
+  message: 'PurchaseRequest.findByReference is not a function',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:32:10.864Z'
+}
+{
+  message: 'WHERE parameter "reference" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:33:36.500Z'
+}
+{
+  message: 'WebhookService.processWebhook is not a function',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:38:19.976Z'
+}
+{
+  message: 'purchaseRequest is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:38:44.332Z'
+}
+{
+  message: 'purchaseRequest is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:39:25.869Z'
+}
+{
+  message: 'Purchase Request with reference PR00001 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:42:11.592Z'
+}
+{
+  message: 'purchaseRequest.details is not iterable',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:42:57.785Z'
+}
+{
+  message: 'Product.findBySku is not a function',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:43:11.813Z'
+}
+{
+  message: 'Product with SKU ICYMINT not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:44:04.657Z'
+}
+{
+  message: 'Product with SKU a not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:44:30.236Z'
+}
+{
+  message: 'invalid input value for enum enum_purchase_requests_status: "Completed"',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:44:44.920Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:50:50.118Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:51:37.851Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:52:35.339Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:54:04.868Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:54:42.397Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:55:49.943Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:57:34.680Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:58:12.904Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:58:21.736Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T16:59:53.360Z'
+}
+{
+  message: 'WHERE parameter "product_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T17:00:26.077Z'
+}
+{
+  message: 'WHERE parameter "warehouse_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T17:01:28.526Z'
+}
+{
+  message: 'WHERE parameter "warehouse_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T17:01:32.439Z'
+}
+{
+  message: 'WHERE parameter "warehouse_id" has invalid "undefined" value',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-20T17:02:32.797Z'
+}

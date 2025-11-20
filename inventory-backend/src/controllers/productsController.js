@@ -19,9 +19,3 @@ const getProduct = async(req,res,next) =>{
 
 module.exports = {getProduct}
 
-
-
-
-// exports.index = async (req, res) => {
-//   res.json({ message: "GET /products" });
-// };

@@ -9,6 +9,15 @@ class ProductRepository {
     return Product.findByPk(id);
   }
 
+  async findBySku(sku) {
+        return Product.findOne({
+            where: {
+                sku: sku 
+            }
+        });
+    }
+
+
   async create(data) {
     return Product.create(data);
   }
@@ -16,6 +25,7 @@ class ProductRepository {
   async update(id, data) {
     return Product.update(data, { where: { id } });
   }
+
 
   async delete(id) {
     return Product.destroy({ where: { id } });
