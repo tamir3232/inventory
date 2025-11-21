@@ -120,10 +120,13 @@ export default function PurchaseRequestPage() {
                         </button>
 
                         <button
-                          className="text-green-600 dark:text-green-400 hover:opacity-70"
-                           onClick={() => router.push(`/requestPurchase/purchase?id=${item.id}`)}
-                        >
-                          <Pencil size={20} />
+                            className={`text-green-600 dark:text-green-400 hover:opacity-70 ${
+                              item.status === "COMPLETED" ? "opacity-40 cursor-not-allowed hover:opacity-40" : ""
+                            }`}
+                            onClick={() => item.status !== "COMPLETED" && router.push(`/requestPurchase/purchase?id=${item.id}`)}
+                            disabled={item.status === "COMPLETED"}
+                          >
+                            <Pencil size={20} />
                         </button>
 
                         <button
