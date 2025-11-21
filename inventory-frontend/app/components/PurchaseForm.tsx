@@ -194,18 +194,27 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
       {id && (
         <div className="mb-4">
           <label className="font-semibold text-slate-700 dark:text-white">Status</label>
-          <select
-            className="w-full p-2 border rounded dark:bg-slate-700 dark:text-white"
-            value={status}
-            onChange={(e) => setStatus(e.target.value)}
-            disabled={status === "COMPLETED"} // kalau COMPLETE, gak bisa diubah
-          >
-            <option value="PENDING">PENDING</option>
-            <option value="DRAFT">DRAFT</option>
-            <option value="COMPLETED">COMPLETED</option>
-          </select>
+          {status === "COMPLETED" ? (
+            <select
+              value={status}
+              disabled
+              className="w-full p-2 border rounded dark:bg-slate-700 dark:text-white"
+            >
+              <option value="COMPLETED">COMPLETED</option>
+            </select>
+          ) : (
+            <select
+              value={status}
+              onChange={(e) => setStatus(e.target.value)}
+              className="w-full p-2 border rounded dark:bg-slate-700 dark:text-white"
+            >
+              <option value="PENDING">PENDING</option>
+              <option value="DRAFT">DRAFT</option>
+            </select>
+          )}
         </div>
       )}
+
 
 
       {/* Items */}
@@ -245,7 +254,8 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
             )}
           </div>
         ))}
-
+      
+        {!isCompleted && (
         <button
           onClick={addItem}
           className="mt-4 bg-green-600 text-white px-4 py-2 rounded"
@@ -253,16 +263,17 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
         >
           + Add Item
         </button>
+        )}
       </div>
-
-      {/* Submit */}
-      <button
-        className="w-full bg-indigo-600 text-white py-3 rounded font-semibold"
-        onClick={submitForm}
-        disabled={loading || isCompleted}
-      >
-        {loading ? "Submitting..." : id ? "Update Purchase Request" : "Submit Purchase Request"}
-      </button>
+      {!isCompleted && (
+        <button
+          className="w-full bg-indigo-600 text-white py-3 rounded font-semibold"
+          onClick={submitForm}
+          disabled={loading}
+        >
+          {loading ? "Submitting..." : id ? "Update Purchase Request" : "Submit Purchase Request"}
+        </button>
+      )}
     </div>
   );
 }
