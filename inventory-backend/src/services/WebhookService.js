@@ -38,9 +38,17 @@ class webhookService {
                 console.log(`Found product ID ${getProduct.id} for SKU ${detail.sku_barcode}`);
                 const getStockExist = await StockRepository.findByProductAndWarehouse( purchaseRequest.warehouse_id,getProduct.id,);
                 console.log(`Current stock for product ID ${getProduct.id} in warehouse ID ${purchaseRequest.warehouse_id}:`, getStockExist ? getStockExist.quantity : 0);
-
-                const stocks = await StockRepository.updateStockByProductAndWarehouse( purchaseRequest.warehouse_id, getProduct.id,{quantity : getStockExist.quantity + detail.qty},t );
-
+                if(!getStockExist){
+                    console.log(`No existing stock found. Creating new stock record.`);
+                    const stocks = await StockRepository.create({
+                        product_id : getProduct.id,
+                        warehouse_id : purchaseRequest.warehouse_id,
+                        quantity : detail.qty
+                    },t );
+                }
+                else{
+                    const stocks = await StockRepository.updateStockByProductAndWarehouse( purchaseRequest.warehouse_id, getProduct.id,{quantity : getStockExist.quantity + detail.qty},t );
+                }
             }
             const updatePurchase = await purchaseRequestRepository.update(purchaseRequest.id, {status: 'COMPLETED'},t);
             await t.commit();

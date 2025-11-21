@@ -9,8 +9,8 @@ class StocksRepository {
     return Stock.findByPk(id);
   }
 
-  async create(data) {
-    return Stock.create(data);
+  async create(data, t = null) {
+    return Stock.create(data, { transaction: t });
   }
 
   async update(id, data) {
