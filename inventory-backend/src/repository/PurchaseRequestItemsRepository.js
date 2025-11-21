@@ -9,6 +9,14 @@ class PurchaseRequestItemsRepository {
     return PurchaseRequestItem.findByPk(id);
   }
 
+   async findByPurchaseRequestId(purchaseRequestId) {
+    return PurchaseRequestItem.findAll({
+    where: {
+      purchase_request_id: purchaseRequestId
+    }
+  });
+  }
+
   async create(data, t = null) {
     return PurchaseRequestItem.create(data, { transaction: t });
   }

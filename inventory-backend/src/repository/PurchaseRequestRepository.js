@@ -1,10 +1,12 @@
-const {PurchaseRequest} = require("../database/models");
+const { PurchaseRequest, Warehouse, PurchaseRequestItem } = require("../database/models");
 
 class purchaseRequestRepository {
 
     async findAll() {
       return PurchaseRequest.findAll();
     }
+
+    
 
    async findByReference(reference) {
     return PurchaseRequest.findOne({
@@ -15,7 +17,19 @@ class purchaseRequestRepository {
   }
 
   async findById(id) {
-    return PurchaseRequest.findByPk(id);
+    return await PurchaseRequest.findOne({
+      where: { id },
+      include: [
+        {
+          model: Warehouse,
+          attributes: ["id", "name"]   
+        },
+        {
+          model: PurchaseRequestItem,
+          attributes: ["id", "product_id", "quantity", "createdAt"]
+        }
+      ]
+    });
   }
   
   async create(data,t = null) {
@@ -23,6 +37,7 @@ class purchaseRequestRepository {
         warehouse_id : data.warehouseId,
         reference : data.reference,
         status : data.status,
+        vendor : data.vendor
     }, { transaction: t });
   }
 
@@ -30,6 +45,7 @@ class purchaseRequestRepository {
     return PurchaseRequest.update({
         warehouse_id : data.warehouseId,
         status : data.status,
+        vendor : data.vendor
     }, { where: { id }, transaction: t });
   }
 

@@ -5,4 +5,6 @@ const controller = require("../controllers/stocksController");
 
 router.get("/", controller.getStock);
 
+
+
 module.exports = router;

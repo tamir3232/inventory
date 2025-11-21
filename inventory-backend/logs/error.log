@@ -922,3 +922,703 @@
   label: 'backend-service',
   timestamp: '2025-11-20T17:02:32.797Z'
 }
+{
+  message: 'Association with alias "warehouse" does not exist on Stock',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T06:56:42.340Z'
+}
+{
+  message: 'Association with alias "warehouse" does not exist on Stock',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T06:56:43.466Z'
+}
+{
+  message: 'GET /api/v1/stockws',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:11:59.443Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:31:32.963Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:31:32.967Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:31:32.968Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:31:46.559Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:31:46.564Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:31:46.570Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:34:08.658Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:34:08.661Z'
+}
+{
+  message: 'GET /api/v1/warehouse',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:34:08.663Z'
+}
+{
+  message: 'OPTIONS /api/v1/purchase',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:58:25.320Z'
+}
+{
+  message: 'OPTIONS /api/v1/purchase',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T07:58:32.453Z'
+}
+{
+  message: '"vendor" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:04:37.316Z'
+}
+{
+  message: '"schema" is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:05:19.584Z'
+}
+{
+  message: 'Reference 121 already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:05:43.403Z'
+}
+{
+  message: 'Reference 345 already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:05:53.594Z'
+}
+{
+  message: 'Reference 3450 already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:06:10.692Z'
+}
+{
+  message: 'Reference easd already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:06:52.948Z'
+}
+{
+  message: 'Reference easd already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:07:11.785Z'
+}
+{
+  message: 'Reference easd already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:08:26.582Z'
+}
+{
+  message: 'Reference as already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:13:06.477Z'
+}
+{
+  message: 'Reference as already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:14:04.411Z'
+}
+{
+  message: 'Reference as already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T08:14:16.408Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be deleted',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:20:27.661Z'
+}
+{
+  message: 'DELETE /api/v1/purchase/request[object%20Object]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:25:38.828Z'
+}
+{
+  message: 'DELETE /api/v1/purchase/request[object%20Object]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:25:43.173Z'
+}
+{
+  message: 'DELETE /api/v1/purchase/request[object%20Object]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:27:48.443Z'
+}
+{
+  message: 'Reference aas already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:28:03.960Z'
+}
+{
+  message: 'Reference a1as already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:28:07.387Z'
+}
+{
+  message: 'Reference a1aas already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:28:10.798Z'
+}
+{
+  message: 'Reference sdaf already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:28:14.428Z'
+}
+{
+  message: 'Reference sdaf already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:29:13.839Z'
+}
+{
+  message: 'Reference sdaf already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:29:28.536Z'
+}
+{
+  message: 'Reference sdaf already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:29:29.346Z'
+}
+{
+  message: "Cannot read properties of null (reading 'length')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:29:40.693Z'
+}
+{
+  message: "Cannot read properties of null (reading 'length')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:29:59.108Z'
+}
+{
+  message: "Cannot read properties of null (reading 'length')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:30:03.109Z'
+}
+{
+  message: 'Reference sdaf already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:31:35.384Z'
+}
+{
+  message: 'Reference sdaef already exists',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:32:26.289Z'
+}
+{
+  message: 'DELETE /api/v1/purchase/request[object%20Object]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:36:57.296Z'
+}
+{
+  message: 'DELETE /api/v1/purchase/request43',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:38:06.377Z'
+}
+{
+  message: 'Purchase Request with ID 42 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:40:27.881Z'
+}
+{
+  message: 'Purchase Request with ID 37 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T09:40:41.163Z'
+}
+{
+  message: '"status" is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T10:55:48.832Z'
+}
+{
+  message: 'Item ID is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:03:23.324Z'
+}
+{
+  message: 'Item ID is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:04:21.894Z'
+}
+{
+  message: '"vendor" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:07:41.379Z'
+}
+{
+  message: '"vendor" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:07:45.258Z'
+}
+{
+  message: 'Purchase Request Item with ID 9 does not belong to Purchase Request ID 17',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:08:54.802Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:09:34.463Z'
+}
+{
+  message: 'Purchase Request Item with ID 27 does not belong to Purchase Request ID 44',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:09:41.675Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:10:45.024Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:10:48.907Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:11:19.235Z'
+}
+{
+  message: '"vendor" is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:19:52.692Z'
+}
+{
+  message: 'Purchase Request Item with ID 13 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:20:03.599Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:20:18.616Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:25:04.349Z'
+}
+{
+  message: 'Item ID is required',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:25:19.628Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:26:14.953Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:26:28.501Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:26:32.031Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:27:04.177Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:27:44.355Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:28:49.958Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:28:55.841Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:28:59.472Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:29:16.190Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:29:20.346Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:29:33.931Z'
+}
+{
+  message: '"items[0].id" is not allowed',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:29:51.466Z'
+}
+{
+  message: 'Product Not Found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:34:06.955Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:34:30.259Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:35:01.251Z'
+}
+{
+  message: 'Purchase Request with ID 45 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:38:09.010Z'
+}
+{
+  message: "Cannot read properties of undefined (reading 'reference')",
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:38:23.028Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be deleted',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:39:53.470Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T11:42:38.835Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:39:19.680Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:40:32.016Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:40:40.707Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:41:34.780Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:42:09.704Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:42:44.676Z'
+}
+{
+  message: '"status" must be one of [PENDING, COMPLETED]',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:44:05.605Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:44:53.982Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:45:03.155Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:45:05.139Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:45:53.712Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:46:01.035Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:46:21.658Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:46:24.052Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be UPDATED',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:59:08.295Z'
+}
+{
+  message: 'purchaseRequestService is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:59:31.203Z'
+}
+{
+  message: 'purchaseRequestService is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T12:59:43.202Z'
+}
+{
+  message: 'purchaseRequestRepository is not defined',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T13:00:37.958Z'
+}
+{
+  message: 'Purchase Request with ID 34 not found',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T13:10:20.580Z'
+}
+{
+  message: 'Only Purchase Requests with status DRAFT can be deleted',
+  level: 'error',
+  service: 'error',
+  label: 'backend-service',
+  timestamp: '2025-11-21T13:13:40.807Z'
+}

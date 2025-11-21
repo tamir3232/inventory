@@ -19,10 +19,8 @@ class purchaseRequestService {
                     message: `Warehouse with ID ${request.warehouseId} not found`
                 };
             }
-            const checkReference = await purchaseRequestRepository.findAll({
-                where: { reference: request.reference }
-            });
-            if (checkReference.length > 0) {
+            const checkReference = await purchaseRequestRepository.findByReference(request.reference);
+            if (checkReference) {
                 throw {
                     code: 400,
                     message: `Reference ${request.reference} already exists`,
@@ -44,7 +42,8 @@ class purchaseRequestService {
                 let dataItem = { 
                     product_id: item.productId,
                     quantity: item.quantity,
-                    purchase_request_id: createPlaningPurchaseRequest.id
+                    purchase_request_id: createPlaningPurchaseRequest.id,
+                    
                 }
                 console.log(`Creating PurchaseRequestItem with data:`, dataItem);
                 await PurchaseRequestItemsRepository.create(dataItem,t);
@@ -70,20 +69,25 @@ class purchaseRequestService {
                     message: `Warehouse with ID ${request.warehouseId} not found`
                 };
             }
-            const checkReference = await purchaseRequestRepository.findAll({
-                where: { id: param.id }
-            });
-            if (checkReference.length < 0) {
+            const checkReference = await purchaseRequestRepository.findById(param.id);
+            if (!checkReference) {
                 throw {
                     code: 404,
                     message: `Purchase Request with ID ${param.id} not found`
+                };
+            }
+            if(checkReference.status != "DRAFT"){
+                console.log(checkReference.status)
+                throw {
+                    code: 400,
+                    message: `Only Purchase Requests with status DRAFT can be UPDATED`
                 };
             }
             const createPlaningPurchaseRequest = await purchaseRequestRepository.update(param.id, request,t);
             let total = 0;
             let details = [];
             for (const item of request.items) {
-                console.log(`Processing item id: ${item.id}, quantity: ${item.quantity} for warehouseId: ${request.warehouseId}`);
+                console.log(`Processing  quantity: ${item.quantity} for warehouseId: ${request.warehouseId}`);
                 let product = await ProductService.getById(item.productId);
                 if (!product) {
                     throw {
@@ -91,28 +95,49 @@ class purchaseRequestService {
                         message: `Product with ID ${item.productId} not found`
                     };
                 }
-
-                let PurchaseRequestItemDataExist = await PurchaseRequestItemsRepository.findById(item.id);
-                if (!PurchaseRequestItemDataExist) {
-                    throw {
-                        code: 404,
-                        message: `Purchase Request Item with ID ${item.id} not found`
-                    };
+                if(!item.id){
+                    let dataItem = { 
+                        product_id: item.productId,
+                        quantity: item.quantity,
+                        purchase_request_id: param.id,
+                    }
+                    console.log(`Creating PurchaseRequestItem with data:`, dataItem);
+                    await PurchaseRequestItemsRepository.create(dataItem,t);
+                    console.log(`Created PurchaseRequestItem for productId: ${item.productId}`);    
+                    total += item.quantity;
+                    details.push({
+                        "product_name": product.name,
+                        "qty": item.quantity,
+                        "purchase_request_id" : param.id
+                    });
+                    continue;
                 }
-                if (PurchaseRequestItemDataExist.purchase_request_id !== param.id) {
-                    throw {
-                        code: 400,
-                        message: `Purchase Request Item with ID ${item.id} does not belong to Purchase Request ID ${param.id}`
-                    };
+                else{
+                    let PurchaseRequestItemDataExist = await PurchaseRequestItemsRepository.findById(item.id);
+                    if (!PurchaseRequestItemDataExist) {
+                        throw {
+                            code: 404,
+                            message: `Purchase Request Item with ID ${item.id} not found`
+                        };
+                    }
+                    if (PurchaseRequestItemDataExist.purchase_request_id != param.id) {
+                        throw {
+                            code: 400,
+                            message: `Purchase Request Item with ID ${item.id} does not belong to Purchase Request ID ${param.id}`
+                        };
+                    }
+                    let dataItem = { 
+                        product_id: item.productId,
+                        quantity: item.quantity,
+                    }
+                    console.log(`Updating PurchaseRequestItem ID ${item.id} with data:`, dataItem);
+                    await PurchaseRequestItemsRepository.update(item.id, dataItem,t);
+                    console.log(`Updated PurchaseRequestItem ID ${item.id}`);    
+                    total += item.quantity;
                 }
-                let dataItem = { 
-                    product_id: item.productId,
-                    quantity: item.quantity,
-                }
-                console.log(`Updating PurchaseRequestItem ID ${item.id} with data:`, dataItem);
-                await PurchaseRequestItemsRepository.update(item.id, dataItem,t);
-                console.log(`Updated PurchaseRequestItem ID ${item.id}`);    
-                total += item.quantity;
+                
+               
+                
                 details.push({
                     "product_name": product.name,
                     "qty": item.quantity,
@@ -122,8 +147,8 @@ class purchaseRequestService {
 
             if(request.status && request.status === 'PENDING'){
                 const payload = { 
-                    "vendor" : "PT FOOM LAB GLOBAL",
-                    "reference" : checkReference[0].reference,
+                    "vendor" : request.vendor,
+                    "reference" : checkReference.reference,
                     "qty_total" : total,
                     "details" : details
                 };
@@ -185,7 +210,40 @@ class purchaseRequestService {
         return purchaseRequestRepository.delete(id);
     }
 
+    async findAll() {
+        const purchaseRequests = await purchaseRequestRepository.findAll();
 
+        const result = [];
+
+        for (const req of purchaseRequests) {
+            const items = await PurchaseRequestItemsRepository.findByPurchaseRequestId(req.id);
+
+            const totalQty = items.reduce((sum, item) => sum + item.quantity, 0);
+
+            result.push({
+            ...req.dataValues,
+            totalQty,
+            items
+            });
+        }
+
+        return result;
+    }
+
+    async findOne(id) {
+        const purchaseRequests = await purchaseRequestRepository.findById(id);
+
+        if(!purchaseRequests){
+             throw {
+                code: 404,
+                message: `Purchase Request with ID ${id} not found`
+            };
+        }
+
+        return purchaseRequests
+
+   
+    }
 
 
 
