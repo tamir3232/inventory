@@ -35,6 +35,7 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
 
         setVendor(data.vendor ?? "");
         setWarehouseId(data.warehouse_id);
+        console.log(data.reference)
         setReference(data.reference);
         setStatus(data.status ?? "PENDING");
         setItems(
@@ -184,8 +185,9 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
         <input
           className="w-full p-2 border rounded dark:bg-slate-700 dark:text-white bg-gray-200"
           type="text"
-          value={reference}
-          readOnly
+            value={reference}
+          onChange={(e) => setReference(e.target.value)}
+          readOnly={!!id} // hanya readOnly kalau edit
         />
       </div>
 
@@ -197,12 +199,15 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
             className="w-full p-2 border rounded dark:bg-slate-700 dark:text-white"
             value={status}
             onChange={(e) => setStatus(e.target.value)}
+            disabled={status === "COMPLETED"} // kalau COMPLETE, gak bisa diubah
           >
             <option value="PENDING">PENDING</option>
             <option value="DRAFT">DRAFT</option>
+            <option value="COMPLETED">COMPLETED</option>
           </select>
         </div>
       )}
+
 
       {/* Items */}
       <div className="mb-6">
