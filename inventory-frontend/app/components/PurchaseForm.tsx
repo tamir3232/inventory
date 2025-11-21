@@ -35,7 +35,6 @@ export default function PurchaseForm({ warehouses, products, id }: PurchaseFormP
 
         setVendor(data.vendor ?? "");
         setWarehouseId(data.warehouse_id);
-        console.log(data.reference)
         setReference(data.reference);
         setStatus(data.status ?? "PENDING");
         setItems(

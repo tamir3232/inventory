@@ -1,21 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { API_PRODUCT, API_WAREHOUSE } from "@/lib/api";
 import PurchaseForm from "@/app/components/PurchaseForm";
 import { useSearchParams } from "next/navigation";
 
-export default function PurchasePage() {
+function PurchaseContent() {
   const [warehouses, setWarehouses] = useState<any[]>([]);
   const [products, setProducts] = useState<any[]>([]);
+  
   const searchParams = useSearchParams();
-  const idParam = searchParams.get("id"); // ambil id dari query param
+  const idParam = searchParams.get("id");
+  const id = idParam ? parseInt(idParam, 10) : undefined;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const warehousesRes = await fetch(API_WAREHOUSE, { cache: "no-store" });
-        const productsRes = await fetch(API_PRODUCT, { cache: "no-store" });
+        const [warehousesRes, productsRes] = await Promise.all([
+          fetch(API_WAREHOUSE, { cache: "no-store" }),
+          fetch(API_PRODUCT, { cache: "no-store" }),
+        ]);
 
         const warehousesJson = await warehousesRes.json();
         const productsJson = await productsRes.json();
@@ -28,17 +32,25 @@ export default function PurchasePage() {
     };
 
     fetchData();
-  }, []);
+  }, []); // Dependency array kosong agar hanya jalan sekali saat mount
 
-  if (!warehouses.length || !products.length) return <p>Loading...</p>;
+  if (!warehouses.length || !products.length) return <p>Loading data...</p>;
 
   return (
+    <PurchaseForm
+      warehouses={warehouses}
+      products={products}
+      id={id}
+    />
+  );
+}
+
+export default function PurchasePage() {
+  return (
     <div className="min-h-screen px-4 py-10 flex justify-center bg-indigo-50 dark:bg-slate-900">
-      <PurchaseForm 
-        warehouses={warehouses} 
-        products={products} 
-        id={idParam ? Number(idParam) : undefined} 
-      />
+      <Suspense fallback={<p>Loading search params...</p>}>
+        <PurchaseContent />
+      </Suspense>
     </div>
   );
 }
