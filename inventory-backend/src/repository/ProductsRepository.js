@@ -30,6 +30,14 @@ class ProductRepository {
   async delete(id) {
     return Product.destroy({ where: { id } });
   }
+
+  async findByName(name) {
+        return Product.findOne({
+            where: {
+                name: name 
+            }
+        });
+  }
 }
 
 module.exports = new ProductRepository();
