@@ -8,7 +8,9 @@ import { useSearchParams } from "next/navigation";
 function PurchaseContent() {
   const [warehouses, setWarehouses] = useState<any[]>([]);
   const [products, setProducts] = useState<any[]>([]);
-  
+  const [loading, setLoading] = useState(true); // state loading
+  const [error, setError] = useState<string | null>(null);
+
   const searchParams = useSearchParams();
   const idParam = searchParams.get("id");
   const id = idParam ? parseInt(idParam, 10) : undefined;
@@ -24,17 +26,21 @@ function PurchaseContent() {
         const warehousesJson = await warehousesRes.json();
         const productsJson = await productsRes.json();
 
-        setWarehouses(warehousesJson.data);
-        setProducts(productsJson.data);
+        setWarehouses(warehousesJson.data || []);
+        setProducts(productsJson.data || []);
       } catch (err) {
         console.error(err);
+        setError("Gagal mengambil data warehouse atau produk.");
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, []); // Dependency array kosong agar hanya jalan sekali saat mount
+  }, []);
 
-  if (!warehouses.length || !products.length) return <p>Loading data...</p>;
+  if (loading) return <p>Loading data...</p>;
+  if (error) return <p className="text-red-500">{error}</p>;
 
   return (
     <PurchaseForm
