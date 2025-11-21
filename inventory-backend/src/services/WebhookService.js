@@ -27,12 +27,12 @@ class webhookService {
             for (const detail of req.data.details) {
                 console.log(`Processing item product_name: ${detail.product_name}, quantity: ${detail.qty} for warehouseId: ${purchaseRequest.warehouse_id}`);
 
-                const getProduct = await ProductsRepository.findBySku(detail.sku_barcode);
+                const getProduct = await ProductsRepository.findByName(detail.product_name);
 
                 if(!getProduct){
                     throw {
                         code: 404,
-                        message: `Product with SKU ${detail.sku_barcode} not found`
+                        message: `Product with SKU ${detail.product_name} not found`
                     };
                 }
                 console.log(`Found product ID ${getProduct.id} for SKU ${detail.sku_barcode}`);
