@@ -141,7 +141,7 @@ export default function PurchaseRequestPage() {
                   <tr>
                     <td
                       className="p-3 border text-center text-gray-500 dark:text-gray-400"
-                      colSpan={5}
+                      colSpan={6}
                     >
                       Tidak ada data
                     </td>
