@@ -1,8 +1,8 @@
 const { Stock } = require("../database/models");
 
 class StocksRepository {
-  async findAll() {
-    return Stock.findAll();
+  async findAll(options={}) {
+    return Stock.findAll(options);
   }
 
   async findById(id) {

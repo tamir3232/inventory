@@ -7,6 +7,10 @@ const controller = require("../controllers/purchaseRequestController");
 router.post("/request/", validation(PurchaseRequestSchema),controller.createPlaningPurchaseRequest);
 router.put("/request/:id", validation(UpdatePurchaseRequestSchema),controller.UpdatePlaningPurchaseRequest);
 router.delete("/request/:id",controller.DeletePlaningPurchaseRequest);
+router.get("/request",controller.GetPlaningPurchaseRequest);
+router.get("/request/:id",controller.GetDetailPlaningPurchaseRequest);
+
+
 
 
 

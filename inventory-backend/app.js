@@ -6,6 +6,15 @@ const routes = require("./src/routes/index");
 const app = express();
 app.use(express.json());
 // Routes
+
+const cors = require("cors");
+
+app.use(cors({
+  origin: "http://localhost:3000",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
+
 app.use("/api/v1", routes);
 app.use(notFound)
 app.use(error)

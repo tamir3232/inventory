@@ -1,3 +1,47 @@
 
 inventory-backend/node_modules/*
 inventory-backend/.env
+inventory-frontend/.env
+inventory-frontend/node_modules/*
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+inventory-frontend/.pnp
+inventory-frontend/.pnp.*
+inventory-frontend/.yarn/*
+!inventory-frontend/.yarn/patches
+!inventory-frontend/.yarn/plugins
+!inventory-frontend/.yarn/releases
+!inventory-frontend/.yarn/versions
+
+# testing
+inventory-frontend/coverage
+
+# next.js
+inventory-frontend/.next/
+inventory-frontend/out/
+
+# production
+inventory-frontend/build
+
+# misc
+inventory-frontend/.DS_Store
+inventory-frontend/*.pem
+
+# debug
+inventory-frontend/npm-debug.log*
+inventory-frontend/yarn-debug.log*
+inventory-frontend/yarn-error.log*
+inventory-frontend/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+inventory-frontend/.env*
+
+# vercel
+inventory-frontend/.vercel
+
+# typescript
+inventory-frontend/*.tsbuildinfo
+inventory-frontend/next-env.d.ts

@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       Stock.belongsTo(models.Product, { foreignKey: "product_id" });
     }
   }
+
   Stock.init(
     {
       warehouse_id: DataTypes.INTEGER,
@@ -15,11 +16,26 @@ module.exports = (sequelize, DataTypes) => {
       quantity: DataTypes.INTEGER,
     },
     {
-     sequelize,
+      sequelize,
       timestamps: true,
       underscored: false,
-      tableName: 'stocks',
+      tableName: "stocks",
+
+      defaultScope: {
+        attributes: { exclude: ["warehouse_id", "product_id"] },
+        include: [
+          {
+            association: "Warehouse",
+            attributes: ["id", "name"],
+          },
+          {
+            association: "Product",
+            attributes: ["id", "name", "sku"],
+          },
+        ],
+      },
     }
   );
+
   return Stock;
 };
