@@ -1,6 +1,7 @@
 const ProductsRepository = require("../repository/ProductsRepository");
 const purchaseRequestRepository = require ("../repository/PurchaseRequestRepository");
 const StockRepository = require("../repository/StocksRepository");
+const { sequelize } = require('../database/models');
 
 class webhookService {
     async processWebhook(req) {
