@@ -8,22 +8,23 @@ class webhookService {
         const t = await sequelize.transaction();
 
         try {
-            const purchaseRequest = await purchaseRequestRepository.findByReference(req.reference);
+            console.log(`Processing webhook for Purchase Request reference: ${req.data.reference}`);
+            const purchaseRequest = await purchaseRequestRepository.findByReference(req.data.reference);
             if(!purchaseRequest){
                 throw {
                     code: 404,
-                    message: `Purchase Request with reference ${req.reference} not found`
+                    message: `Purchase Request with reference ${req.data.reference} not found`
                 };
             }
 
             if(purchaseRequest.status === 'COMPLETED'){
                 throw {
                     code: 400,
-                    message: `Purchase Request with reference ${req.reference} already completed`
+                    message: `Purchase Request with reference ${req.data.reference} already completed`
                 };
             }
 
-            for (const detail of req.details) {
+            for (const detail of req.data.details) {
                 console.log(`Processing item product_name: ${detail.product_name}, quantity: ${detail.qty} for warehouseId: ${purchaseRequest.warehouse_id}`);
 
                 const getProduct = await ProductsRepository.findBySku(detail.sku_barcode);
@@ -41,8 +42,8 @@ class webhookService {
                 const stocks = await StockRepository.updateStockByProductAndWarehouse( purchaseRequest.warehouse_id, getProduct.id,{quantity : getStockExist.quantity + detail.qty},t );
 
             }
-            await t.commit();
             const updatePurchase = await purchaseRequestRepository.update(purchaseRequest.id, {status: 'COMPLETED'},t);
+            await t.commit();
 
             return purchaseRequest;
         } catch (error) {
